@@ -1,24 +1,16 @@
-:root {
-    --redBold: #D90429;
-    --redLight: #EF233C;
-    --grayLight: #EDF2F4;
-    --grayMedium: #8D99AE;
-    --navyDark: #2B2D42;
-}
-
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: var(--navyDark);
+    color: #2B2D42;
     background-color: #ffffff;
     line-height: 1.6;
-    padding-top: 60px; /* Add padding to prevent content from being hidden under the navbar */
+    padding-top: 60px; 
 }
 
 img {
@@ -48,8 +40,8 @@ h1, h2, h3, .navbarBrand {
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: var(--navyDark);
-    color: var(--grayLight);
+    background-color: #2B2D42;
+    color: #EDF2F4;
     padding: 1rem 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -63,7 +55,7 @@ h1, h2, h3, .navbarBrand {
 .navbarBrand {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--grayLight);
+    color: #EDF2F4;
     text-decoration: none;
 }
 
@@ -71,7 +63,7 @@ h1, h2, h3, .navbarBrand {
     display: none;
     background: transparent;
     border: none;
-    color: var(--grayLight);
+    color: #EDF2F4;
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
@@ -81,7 +73,7 @@ h1, h2, h3, .navbarBrand {
     display: inline-block;
     width: 24px;
     height: 2px;
-    background-color: var(--grayLight);
+    background-color: #EDF2F4;
     position: relative;
 }
 
@@ -91,7 +83,7 @@ h1, h2, h3, .navbarBrand {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--grayLight);
+    background-color: #EDF2F4;
     left: 0;
 }
 
@@ -113,7 +105,7 @@ h1, h2, h3, .navbarBrand {
 }
 
 .navLink {
-    color: var(--grayLight);
+    color: #EDF2F4;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -122,18 +114,17 @@ h1, h2, h3, .navbarBrand {
 }
 
 .navLink:hover {
-    color: var(--redLight);
+    color: #EF233C;
 }
 
-/* Hero Section */
 .hero {
     background: linear-gradient(rgba(43, 45, 66, 0.95), rgba(43, 45, 66, 0.9));
     background-size: cover;
     background-position: center;
-    min-height: calc(100vh - 60px); /* Adjust for fixed navbar */
+    min-height: calc(100vh - 60px); 
     display: flex;
     align-items: center;
-    color: var(--grayLight);
+    color: #EDF2F4;
     padding: 5rem 0;
 }
 
@@ -153,10 +144,9 @@ h1, h2, h3, .navbarBrand {
 .lead {
     font-size: 1.25rem;
     margin-bottom: 2rem;
-    color: var(--grayMedium);
+    color: #8D99AE;
 }
 
-/* Buttons */
 .btn {
     display: inline-block;
     text-decoration: none;
@@ -167,7 +157,7 @@ h1, h2, h3, .navbarBrand {
 }
 
 .btnPrimary {
-    background-color: var(--redBold);
+    background-color:#D90429;
     color: white;
     padding: 0.8rem 2rem;
     border-radius: 25px;
@@ -176,19 +166,18 @@ h1, h2, h3, .navbarBrand {
 }
 
 .btnPrimary:hover {
-    background-color: var(--redLight);
+    background-color: #EF233C;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(217, 4, 41, 0.3);
 }
 
-/* Sections */
 section {
     padding: 5rem 0;
     position: relative;
 }
 
 section h2 {
-    color: var(--navyDark);
+    color: #2B2D42;
     font-weight: 700;
     margin-bottom: 3rem;
 }
@@ -206,14 +195,13 @@ section h2 {
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background-color: var(--redBold);
+    background-color: #D90429;
 }
 
 .bgLight {
-    background-color: var(--grayLight);
+    background-color: #EDF2F4;
 }
 
-/* Project Cards */
 .projectGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -264,13 +252,13 @@ section h2 {
 .cardTitle {
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
-    color: var(--navyDark);
+    color: #2B2D42;
     font-weight: 600;
 }
 
 .cardText {
     margin-bottom: 1rem;
-    color: var(--grayMedium);
+    color: #8D99AE;
     flex-grow: 1;
 }
 
@@ -282,15 +270,14 @@ section h2 {
 }
 
 .badge {
-    background-color: var(--navyDark);
-    color: var(--grayLight);
+    background-color: #2B2D42;
+    color: #EDF2F4;
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     font-size: 0.8rem;
     display: inline-block;
 }
 
-/* About Section */
 .aboutContainer {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -313,7 +300,7 @@ section h2 {
 
 .aboutContent .lead {
     margin-bottom: 1.5rem;
-    color: var(--grayMedium);
+    color: #8D99AE;
 }
 
 .aboutContent h4 {
@@ -328,8 +315,8 @@ section h2 {
 }
 
 .skillBadge {
-    background-color: var(--navyDark);
-    color: var(--grayLight);
+    background-color: #2B2D42;
+    color: #EDF2F4;
     padding: 0.5rem 1rem;
     border-radius: 25px;
     font-size: 0.95rem;
@@ -337,11 +324,10 @@ section h2 {
 }
 
 .skillBadge:hover {
-    background-color: var(--redBold);
+    background-color: #D90429;
     transform: translateY(-2px);
 }
 
-/* Contact Form */
 .contactContainer {
     display: flex;
     justify-content: center;
@@ -375,7 +361,7 @@ section h2 {
 .formControl {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid var(--grayMedium);
+    border: 1px solid #8D99AE;
     border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
     transition: all 0.3s ease;
@@ -383,7 +369,7 @@ section h2 {
 
 .formControl:focus {
     outline: none;
-    border-color: var(--redLight);
+    border-color: #EF233C;
     box-shadow: 0 0 0 0.2rem rgba(239, 35, 60, 0.25);
 }
 
@@ -392,14 +378,12 @@ textarea.formControl {
     min-height: 120px;
 }
 
-/* Footer */
 footer {
-    background-color: var(--navyDark);
-    color: var(--grayLight);
+    background-color: #2B2D42;
+    color: #EDF2F4;
     padding: 2rem 0;
 }
 
-/* Responsive Styles */
 @media screen and (max-width: 992px) {
     .projectGrid {
         grid-template-columns: repeat(2, 1fr);
@@ -416,7 +400,7 @@ footer {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: var(--navyDark);
+        background-color: #2B2D42;
         height: 0;
         overflow: hidden;
         transition: all 0.3s ease;
